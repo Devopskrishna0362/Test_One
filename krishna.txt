@@ -1,1 +1,2 @@
-it is sample file just for checking 
+krishna is one of the devops learner 
+He just started learing devops last month 
