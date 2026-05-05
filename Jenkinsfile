@@ -10,7 +10,7 @@ pipeline {
                 pwd
                 ls -l
                 cat > sample.txt
-                
+                rm sample.txt
                 '''
             }
         }
