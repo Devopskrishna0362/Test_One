@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Build') {
             steps {
                 echo 'Hello World'
                 sh'''
@@ -17,6 +17,7 @@ pipeline {
         }
         stage ('test'){
             steps{
+                echo 'This is your first test case'
                 test -f sample.txt
             }
         }
