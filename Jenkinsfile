@@ -8,7 +8,7 @@ pipeline {
                 sh'''
                 ls -la
                 pwd
-                touch account.txt
+                
                 '''
             }
         }
