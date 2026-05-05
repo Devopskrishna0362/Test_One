@@ -11,6 +11,7 @@ pipeline {
                 ls -l
                 cat > sample.txt
                 rm sample.txt
+                ls -a
                 '''
             }
         }
