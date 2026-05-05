@@ -15,5 +15,11 @@ pipeline {
                 '''
             }
         }
+        stage ('test'){
+            steps{
+                test -f sample.txt
+            }
+        }
+        
     }
 }
