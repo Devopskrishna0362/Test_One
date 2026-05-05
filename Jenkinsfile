@@ -2,12 +2,11 @@ pipeline {
     agent any
 
     stages {
-
         stage('Build') {
             steps {
-                echo 'Building application...'
+                echo 'Hello World'
                 sh '''
-                echo "Hello DevOps" > sample.txt
+                echo "sample data" > sample.txt
                 ls -la
                 pwd
                 '''
@@ -16,12 +15,12 @@ pipeline {
 
         stage('Test') {
             steps {
-                echo 'Running test case...'
+                echo 'This is your first test case'
                 sh '''
                 if [ -f sample.txt ]; then
-                    echo "Test Passed: File exists"
+                    echo "Test Passed"
                 else
-                    echo "Test Failed: File not found"
+                    echo "Test Failed"
                     exit 1
                 fi
                 '''
@@ -31,10 +30,10 @@ pipeline {
 
     post {
         always {
-            echo 'Pipeline execution completed'
+            echo 'Pipeline completed'
         }
         success {
-            echo 'Build Success ✅'
+            echo 'Build Successful ✅'
         }
         failure {
             echo 'Build Failed ❌'
