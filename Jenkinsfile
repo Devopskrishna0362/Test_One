@@ -8,6 +8,8 @@ pipeline {
                 sh'''
                 ls -la
                 pwd
+                ls -l
+                cat > sample.txt
                 
                 '''
             }
