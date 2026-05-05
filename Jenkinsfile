@@ -9,7 +9,7 @@ pipeline {
                 echo "sample data" > sample.txt
                 ls -la
                 pwd
-                rm sample.txt
+                //rm sample.txt
                 '''
             }
         }
