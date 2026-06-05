@@ -26,7 +26,7 @@ pipeline {
                 fi
                 '''
             }
-    
+    }
       stage('Prod'){
          steps{
              echo 'this is your test state'
