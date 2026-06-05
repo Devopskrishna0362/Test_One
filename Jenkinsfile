@@ -26,9 +26,13 @@ pipeline {
                 fi
                 '''
             }
-        }
-    }
-
+    
+      stage('Prod'){
+         steps{
+             echo 'this is your test state'
+             }
+         }
+       }
     post {
         always {
             echo 'Pipeline completed'
