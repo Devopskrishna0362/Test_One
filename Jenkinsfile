@@ -18,7 +18,7 @@ pipeline {
             steps {
                 echo 'This is your first test case'
                 sh '''
-                if [ -f sample.txt ]; then
+                if [ -f sample1.txt ]; then
                     echo "Test Passed"
                 else
                     echo "Test Failed"
